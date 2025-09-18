@@ -5,6 +5,7 @@ import Navbar from './myRouters/Navbar'
 import Contact from "./myRouters/Contact"
 import PageNotFound from "./myRouters/PageNotFound";
 import Search from "./myRouters/Search";
+import Employee from "./myRouters/Employee";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="Contact" element={<Contact />} />
           <Route path="/*" element={<PageNotFound />} />
           <Route path="Search" element={<Search />} />
+          <Route path="Employee/:name/:age" element={<Employee />} />
         </Routes>
       </BrowserRouter>
     </>

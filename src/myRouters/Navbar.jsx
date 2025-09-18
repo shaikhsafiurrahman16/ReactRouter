@@ -48,6 +48,8 @@ function Navbar() {
               >
                 Contact
               </NavLink>
+            </li>
+            <li>
               <NavLink
                 className="nav-Link"
                 to="/Search"
@@ -58,6 +60,19 @@ function Navbar() {
                 }}
               >
                 Search
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className="nav-Link"
+                to="/Employee"
+                style={({ isActive }) => {
+                  return {
+                    borderBottom: isActive ? "3px solid red" : "none",
+                  };
+                }}
+              >
+                Employee
               </NavLink>
             </li>
           </ul>
